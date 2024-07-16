@@ -1,13 +1,11 @@
-# Sample Hardhat Project
+# Multisig Wallet Smart Contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+## Overview
 
-Try running some of the following tasks:
+This project is a multisig wallet smart contract implemented in Solidity. The wallet allows multiple owners to approve transactions, ensuring enhanced security. Additionally, it includes a feature that locks the transaction amount in the wallet until a specific number of owners approve the transaction within a predefined time frame.
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+## Features
+
+- **Multisig Approval**: Multiple owners can approve transactions, ensuring that no single owner can execute a transaction unilaterally.
+- **Locked Amount**: Transaction amounts are locked in the wallet until the required number of owners approve the transaction within a specified time.
+- **Security**: Enhanced security through multisig approval and locked amounts.
